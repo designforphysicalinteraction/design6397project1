@@ -1,6 +1,6 @@
 /* /////////////////////////////////////
 
-  4.043 / 4.044 Design Studio: Interaction Intelligence
+  DESIGN 6397: Design for Physical Interaction
   February 9, 2024
   Marcelo Coelho
 
