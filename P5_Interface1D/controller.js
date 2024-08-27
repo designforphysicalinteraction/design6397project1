@@ -27,7 +27,7 @@ class Controller {
                 display.setPixel(playerOne.position, playerOne.playerColor);
                 display.setPixel(playerTwo.position, playerTwo.playerColor);
                 
-
+                
                 // now add the target
                 display.setPixel(target.position, target.playerColor);
 
