@@ -50,7 +50,7 @@ class Display {
     clear() {
 
         for(let i = 0; i < this.displaySize; i++) {    
-        this.displayBuffer[i] = this.initColor; 
+          this.displayBuffer[i] = this.initColor; 
         }
     }
     

@@ -13,7 +13,6 @@ class Player {
     }
 
 
-
     // Move player based on keyboard input
     move(_direction) {
 
