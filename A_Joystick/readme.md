@@ -6,32 +6,23 @@ Arduino is the microcontroller platform you will use to create your joystick. Yo
 
 ## 2. Program Arduino
 
-We are using Arduino Leonardo. Plug your Arduino into your computer and you should see a small blinking LED. If you don't, it could be because your Arduino is not properly connected to your computer or your computer might be having some driver issues recognizing the board.
+We are using a clone of the Arduino Pro Micro (https://www.sparkfun.com/products/12640). Plug your Arduino into your computer and you should see a small red LED for power. If you don't, it could be because your Arduino is not properly connected to your computer or your computer might be having some driver issues recognizing the board.
 
 Now let's make sure you can program your board.
 
 First you need tell the Arduino IDE what port your board is connected to and make sure you've selected the right board.
 
-Go to **Tools > Boards** and select **Arduino Leonardo**.
+Go to **Tools > Boards** and select **Arduino Micro**. **Arduino Leonardo** uses the same microcontroller and will also work.
 
 Then select the port the Arduino is connected to.
 
-Go to **Tools > Port** and then **/dev/cu.usbmodemHIDPC1 (Arduino Leonardo)**. <-- this is what it is called on my computer. Yours might be different.
+Go to **Tools > Port** and then **/dev/cu.usbmodemHIDPC1 (Arduino Micro)**. <-- this is what it is called on my computer. Yours might be different.
 
 Then run a simple example to make sure your Arduino programs correctly.
 
-Go to **File > Examples > 01.Basics > Blink**. This will open a sketch that makes the LED blink.
+Go to **File > New Sketch**. This will open a blank sketch.
 
 Click the Upload arrow. And you should get a **Done Uploading** message.
-
-Your LED should continue blinking as before. Now, try changing the delay time to 100 ms, reprogram and see if it blinks faster:
-
-```java
-digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)
-delay(100); // wait for a second
-digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
-delay(100); // wait for a second
-```
 
 ## 2.5 Reset
 
