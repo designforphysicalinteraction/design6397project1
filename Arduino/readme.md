@@ -40,7 +40,7 @@ https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/example-2-hi
 
 ## 4. Add a Joystick and Run A_Joystick
 
-Connect a joystick to your Arduino Pro Micro with jumper wires. In the example code, we use Analog Pins A0 and A1 for the movement (analog potentiometers), and digital input 2 to register press (switch):
+Connect a joystick to your Arduino Pro Micro with jumper wires. In the example code, we use Analog Pins A0 and A1 for the movement (analog potentiometers), and digital input 2 to register pressing down (pushbutton):
 ![Hookup Guide](https://raw.githubusercontent.com/designforphysicalinteraction/design6397project1/refs/heads/main/figures/arduino_pro_micro_joystick_hookup.png)
 
 ## 5. Add a Rotary Encoder
