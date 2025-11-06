@@ -1,9 +1,10 @@
 #include <Keyboard.h> // include the keyboard library, which outputs native key commands on the Arduino
 
-const int joyX = A0;   // Joystick X-axis pin
-const int joyY = A1;   // Joystick Y-axis pin
-const int joyBtn = 2;  // Joystick button pin
+const int joyX = A0;   // Joystick X-axis input pin
+const int joyY = A1;   // Joystick Y-axis input pin
+const int joyBtn = 2;  // Joystick button input pin
 
+// To understand how the joystick works
 const int threshold = 300;  // Deadzone threshold around center (adjust as needed)
 int centerX = 512;          // Default center value for X (approx)
 int centerY = 512;          // Default center value for Y (approx)
