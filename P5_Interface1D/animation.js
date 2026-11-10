@@ -33,14 +33,20 @@ class Animation {
         // Start from the center
         let center = parseInt(this.pixels/2);
         
-        // Animate to the right
-        this.animation[i][k+center] = color(255, 255, 0);
+        // Animate to the right and left, but guard against out-of-bounds indices
+        let rightIdx = k + center;
+        let leftIdx = center - k;
 
-        // Animate to the left
-        this.animation[i][center-k] = color(255, 255, 0);
+        if (rightIdx >= 0 && rightIdx < this.pixels) { // make sure we don't go out of bounds
+            this.animation[i][rightIdx] = color(255, 255, 0);
+        }
+
+        if (leftIdx >= 0 && leftIdx < this.pixels) { // make sure we don't go out of bounds
+            this.animation[i][leftIdx] = color(255, 255, 0);
+        }
         
         // Increment animation pixel
-        k = k+1;
+        k = k+1; 
     }
 
     }
@@ -48,9 +54,9 @@ class Animation {
     // This function advances animation to next frame and returns current frame number
     currentFrame() {
 
-        this.currentFrameCount = this.currentFrameCount + 1;
+        this.currentFrameCount = this.currentFrameCount + 1; // advance to next frame
 
-        if (this.currentFrameCount >= this.numberOfFrames) {
+        if (this.currentFrameCount >= this.numberOfFrames) { // loop back to beginning
             this.currentFrameCount = 0;
         }
 
@@ -59,7 +65,6 @@ class Animation {
 
     // Returns one pixel at a time
     grabPixel(_index) {
-
         return this.animation[this.currentFrameCount][_index];
     }
 

@@ -18,7 +18,6 @@ Its simplicity provides a great platform for learning some of the fundamental id
    - Press **R** for re-starting the game.
 
 
-
 # Concepts
 
 ### Feedback

@@ -8,7 +8,7 @@
 
 
 let displaySize = 30;   // how many pixels are visible in the game
-let pixelSize = 20;     // how big each 'pixel' looks on screen
+let pixelSize = 30;     // how big each 'pixel' looks on screen
 
 let playerOne;    // Adding 2 players to the game
 let playerTwo;
